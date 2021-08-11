@@ -63,7 +63,7 @@ public class DependencyInjectionEngine {
 
         try {
 
-            if (cls.isAnnotationPresent(Bean.class) || cls.isAnnotationPresent(Component.class)) {
+            if ( cls.isAnnotationPresent(Component.class)) {
                 Optional.of(createObject(cls));
             }
             if (cls.isAnnotationPresent(Service.class)) {

@@ -2,11 +2,8 @@ package app;
 
 import di.DependencyInjectionEngine;
 import di.DependencyInjectionStarter;
-import di.DependencySupplier;
-import model.City;
 import model.Country;
 
-import java.util.HashMap;
 
 public class App {
 
@@ -14,6 +11,7 @@ public class App {
 
 
         DependencyInjectionStarter dependencyInjectionStarter = new DependencyInjectionStarter();
+        dependencyInjectionStarter.scan();
 
 
         Country country = (Country) dependencyInjectionStarter.inject(Country.class);
