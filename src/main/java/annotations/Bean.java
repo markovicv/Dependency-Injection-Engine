@@ -9,5 +9,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface Bean {
 
-    public Scope scope() default Scope.SINGLETON;
+
 }
